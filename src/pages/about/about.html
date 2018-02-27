@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <h2>About us page!</h2>
+  <p>From Store: {{testStr | async}}</p>
+  <p>From Service >>></p>
+  <!-- <p>{{respData | json}}</p> -->
+
+  <div *ngFor="let data of respData">
+    <!-- <p>{{data | json}}</p> -->
+    <ul>
+      <li>{{data.id}}</li>
+      <li>{{data.name}}</li>
+      <li>{{data.email}}</li>
+      <li>{{data.phone}}</li>
+    </ul>
+  </div>
+
+
+</ion-content>
